@@ -1,5 +1,7 @@
 # シークレットサービス？
 
+**日本語** | [English](#english-secret-service)
+
 **画像加工ソフトで、上から黒く塗れば大丈夫？**
 
 **……いつから、本当に消えていると「錯覚」していた？**
@@ -130,3 +132,96 @@
 それを決めるのは、あなたです。
 
 **プライバシーを死守せよ！🤖**
+
+---
+
+## English: Secret Service?
+
+**Think painting a black box over an image is enough?**
+
+**...When did you start believing the information was really gone?**
+
+**LEAVE IT TO US, HUMAN. 🤖**
+
+An image can look covered while the original information is still present. Secret Service? replaces the pixels in the areas you select when it saves the edited image.
+
+Hide names, addresses, account details, private conversations, or anything else you did not mean to show. **Share what you want people to see. Cover what you don't.**
+
+**Protect your privacy!** The choice is yours.
+
+Secret Service? is a Windows app for hiding parts of screenshots and other images. Draw a rectangle around each area you want to cover. Choose **Mosaic**, **Black fill**, or **Custom color**. With Custom color, you can use the eyedropper inside the color picker to match a color already in the image.
+
+You can also crop or resize the image before saving it.
+
+![Secret Service? main window](screenshots/main-window.jpg)
+
+The app's interface is in Japanese. The button names below show the Japanese label followed by its English meaning.
+
+### What you can do
+
+| Tool | What it does |
+| --- | --- |
+| モザイク (Mosaic) | Makes the selected area blocky. |
+| 黒塗り (Black fill) | Replaces the selected area with black. |
+| 指定色 (Custom color) | Fills the selected area with a color you choose. The color picker's eyedropper can sample a color from the image. |
+| 切り取り (Crop) | Keeps only the area inside the rectangle you draw. |
+| リサイズ (Resize) | Changes the dimensions of the image you will save. |
+| 元に戻す (Undo) | Reverses the most recent edit, crop, or resize. |
+
+You can cover several areas in the same image, one after another.
+
+### Getting started
+
+1. **Open an image.** Drag an image file onto the large area in the middle of the window, click that area to choose a file, or press **FileOpen** at the top.
+2. **Choose how to hide an area.** Select **モザイク** (Mosaic), **黒塗り** (Black fill), or **指定色** (Custom color). For Custom color, click the color control to open the color picker. Its eyedropper lets you sample a color directly from the image.
+3. **Draw a rectangle.** Hold the left mouse button over the image, drag across the area you want to hide, and release. Repeat for any other areas.
+4. **Check the result.** Press **元に戻す** (Undo) if you make a mistake. You can also use **切り取り** (Crop) to keep only part of the image.
+5. **Save.** For your first edit, use the floppy disk button labeled **新規** (Save as New). Choose a name and location. This saves a separate image and leaves the original file in place.
+
+The app shows `AREA REDACTED` after you cover an area and `REDACTION COMPLETE` after a successful save.
+
+### Save as New or Overwrite?
+
+- **新規 (Save as New)** saves a separate image and keeps the original. The suggested filename adds `-smoke`: `photo.png` becomes `photo-smoke.png`.
+- **上書き (Overwrite)** replaces the image file you opened with the edited version. The app asks you to confirm before doing this. Use Save as New if you want to keep the original.
+
+Undo only reverses edits during the current session. **It cannot restore an original image after you overwrite it.**
+
+### Image size versus screen zoom
+
+The **リサイズ** (Resize) control in the top row changes the image's actual dimensions. Enter `80%` and press **決定** (Apply) to make the image 80% of its original size.
+
+The **画面：＋／－** (Screen zoom) buttons change only how large the image appears while you edit it. They do **not** change the size of the saved image.
+
+If zooming makes part of the image go off screen, select **移動** (Pan) and drag the image into view.
+
+### Supported image formats
+
+- **Open:** PNG, JPEG, WebP, BMP
+- **Save as New:** PNG, JPEG
+- **Overwrite:** saves in the format of the image you opened
+
+### Before sharing a sensitive image
+
+Open the saved image again and check for anything you forgot to cover. If text such as a name, address, or account detail must be unreadable, **黒塗り** (Black fill) is the clearest choice.
+
+To make a covered area blend into a plain background, use **指定色** (Custom color) and sample the surrounding color with the eyedropper.
+
+### Keyboard shortcuts
+
+- `Ctrl+O`: Open an image
+- `Ctrl+Z`: Undo
+- `Ctrl+S`: Overwrite (or choose a destination for an image without one)
+- `Ctrl+Shift+S`: Save as New
+- `Ctrl++` / `Ctrl+-`: Zoom the screen view in or out
+- `Ctrl+0`: Fit the whole image to the window
+
+### Download
+
+**For 64-bit Windows. No installation required.**
+
+[Download the latest release](https://github.com/Geek0426/SecretService/releases/latest), then run the downloaded `.exe` file.
+
+**What will you show, and what will you hide? The choice is yours.**
+
+**Protect your privacy! 🤖**
